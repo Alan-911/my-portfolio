@@ -771,6 +771,147 @@ body::before {
     color: var(--accent);
 }
 
+/* Recommendations Section */
+.recommendations-section {
+    padding: 5rem 0;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
+}
+
+.rec-card {
+    padding: 2.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rec-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(77, 238, 234, 0.1);
+}
+
+.rec-quote-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    opacity: 0.5;
+    line-height: 1;
+}
+
+.rec-body {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.85;
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.rec-body strong {
+    color: var(--primary);
+    font-style: normal;
+}
+
+.rec-meta {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.rec-avatar-placeholder {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(77,238,234,0.2), rgba(240,0,255,0.2));
+    border: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.rec-avatar-placeholder--industry {
+    border-color: var(--secondary);
+    color: var(--secondary);
+    background: linear-gradient(135deg, rgba(116,238,21,0.15), rgba(77,238,234,0.1));
+}
+
+.rec-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.rec-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+}
+
+.rec-title {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-family: var(--font-mono);
+}
+
+.rec-affiliation {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+
+.rec-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.4rem;
+}
+
+.rec-link {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.rec-link:hover {
+    color: var(--primary);
+}
+
+.rec-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    align-self: flex-start;
+}
+
+.rec-tag--academic {
+    background: rgba(77, 238, 234, 0.12);
+    color: var(--primary);
+    border: 1px solid rgba(77, 238, 234, 0.3);
+}
+
+.rec-tag--industry {
+    background: rgba(116, 238, 21, 0.12);
+    color: var(--secondary);
+    border: 1px solid rgba(116, 238, 21, 0.3);
+}
+
 /* Footer */
 .footer {
     text-align: center;
