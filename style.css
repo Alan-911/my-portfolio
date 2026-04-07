@@ -37,13 +37,29 @@ body {
 }
 
 #particles-js {
+    display: none;
+}
+
+body::before {
+    content: '';
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Behind everything */
-    background: radial-gradient(circle at center, #11111a 0%, #050508 100%);
+    z-index: -1;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(77, 238, 234, 0.07) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(240, 0, 255, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(116, 238, 21, 0.05) 0%, transparent 50%),
+        linear-gradient(135deg, #050508 0%, #0a0a14 50%, #050508 100%);
+    animation: bgShift 12s ease-in-out infinite alternate;
+}
+
+@keyframes bgShift {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.85; }
+    100% { opacity: 1; }
 }
 
 /* Utilities */
@@ -126,7 +142,8 @@ body {
     letter-spacing: 1px;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--primary);
 }
 
