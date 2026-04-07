@@ -24,6 +24,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-main);
     background-color: var(--bg-dark);
@@ -444,9 +448,25 @@ body {
     gap: 12px;
 }
 
-.project-desc {
+.project-business-case {
+    font-size: 0.95rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.project-business-case p {
+    margin-bottom: 0.5rem;
+}
+
+.project-business-case strong {
+    color: var(--primary);
+}
+
+.project-impact {
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px dashed rgba(77, 238, 234, 0.2);
 }
 
 .project-links a {
