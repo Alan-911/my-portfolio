@@ -150,14 +150,56 @@ body::before {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 4rem;
     padding-top: 5rem;
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* RIGHT column: avatar + about */
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    border-left: 3px solid var(--primary);
+}
+
+.hero-about-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: var(--font-mono);
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+}
+
+.hero-about {
+    width: 100%;
+}
+
+.hero-about p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.hero-about p:last-child {
+    margin-bottom: 0;
 }
 
 .status-badge {
@@ -689,6 +731,14 @@ body::before {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-top: 6rem;
+    }
+    .hero-right {
+        width: 100%;
+    }
     .nav-links {
         display: none;
     }
