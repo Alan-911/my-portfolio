@@ -501,10 +501,66 @@ body::before {
 
 .project-title {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+/* Project Badge (e.g. "Live Product", "Research") */
+.project-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: #000;
+    font-size: 0.72rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-badge--research {
+    background: linear-gradient(90deg, var(--accent), #ff6be8);
+    color: #fff;
+}
+
+/* Featured card: cyan top border accent */
+.project-card--featured {
+    border-top: 2px solid var(--primary);
+}
+
+/* Research card: purple top border accent */
+.project-card--research {
+    border-top: 2px solid var(--accent);
+}
+
+/* Role & status line */
+.project-role {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-family: var(--font-mono);
+}
+
+.project-status {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+/* Live site link style */
+.project-link--live {
+    color: var(--secondary) !important;
+    border: 1px solid rgba(116, 238, 21, 0.4);
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.project-link--live:hover {
+    background: rgba(116, 238, 21, 0.1);
+    color: var(--secondary) !important;
 }
 
 .project-business-case {
