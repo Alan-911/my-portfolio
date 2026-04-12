@@ -52,9 +52,57 @@ Plotly.newPlot('chart-latency', [], getSharedLayout(), {displayModeBar: false, r
 async function fetchState() {
     try {
         const res = await fetch(`/api/state?timeframe=${encodeURIComponent(currentTimeframe)}`);
+        if (!res.ok) throw new Error("Backend unavailable");
         const d = await res.json();
         renderData(d);
-    } catch(e) { console.error("Poll Error:", e); }
+    } catch(e) { 
+        // fallback to Simulation Mode
+        console.warn("Switching to Simulation Mode...");
+        const simulatedData = generateSimulatedState();
+        renderData(simulatedData);
+    }
+}
+
+function generateSimulatedState() {
+    const now = new Date();
+    const x = [];
+    for(let i=0; i<20; i++) x.push(new Date(now.getTime() - (20-i)*60000).toLocaleTimeString());
+    
+    // Determine multiplier based on timeframe for visual scale
+    let mult = 1.0;
+    if(currentTimeframe === 'Last 1 Hour') mult = 5.4;
+    if(currentTimeframe === 'Last 24 Hours') mult = 24.8;
+
+    return {
+        health_score: 91 + Math.random() * 5,
+        inventory_days: 12 + Math.random() * 3,
+        sentiment_text: "POSITIVE",
+        sentiment_score: 4.2 + Math.random() * 0.4,
+        sales_trend: {
+            x: x,
+            hourly: x.map(() => (Math.random() * 500 + 1200) * mult),
+            daily: x.map(() => (Math.random() * 300 + 2000) * mult * 3),
+            anomaly: x.map((_, i) => i === 15 ? 4500 * mult : null)
+        },
+        sentiment_polarity: {
+            x: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            y: [0.2, 0.4, 0.35, 0.6, 0.55, 0.8, 0.75]
+        },
+        roas_fb: 3.4 + Math.random() * 0.5,
+        roas_google: 4.1 + Math.random() * 0.3,
+        latency: {
+            nodes: ['Ingestion', 'NLU', 'RAG', 'Action'],
+            fetch: [12, 14, 18, 10],
+            reason: [45, 120, 85, 30],
+            action: [5, 10, 5, 20]
+        },
+        logs: [
+            `[${new Date().toLocaleTimeString()}] INFO: Node Ingestion received packet.`,
+            `[${new Date().toLocaleTimeString()}] SUCCESS: RAG retrieval completed within 85ms.`,
+            `[${new Date().toLocaleTimeString()}] WARNING: Minor drift detected in Node 3.`,
+            `[${new Date().toLocaleTimeString()}] INFO: Auto-scaling active nodes (Current: 12)`
+        ]
+    };
 }
 
 function renderData(d) {
@@ -121,7 +169,8 @@ function forceChartRedraw() { fetchState(); } // Next tick paints new colors
 
 // --- UI Controls --- //
 function downloadReport() {
-    window.location.href = `/api/export_report?timeframe=${encodeURIComponent(currentTimeframe)}`;
+    // On the portfolio site, we point to the static PDF version
+    window.location.href = "../AuraCommerce_Project_Report.pdf";
 }
 
 function openSettings() { document.getElementById("settingsModal").style.display = "block"; }
