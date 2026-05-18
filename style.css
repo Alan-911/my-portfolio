@@ -802,6 +802,8 @@ body::before {
     flex-direction: column;
     gap: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    min-height: min-content;
 }
 
 .rec-card:hover {
