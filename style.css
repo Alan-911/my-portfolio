@@ -1,17 +1,17 @@
 /* CSS Variables */
 :root {
-    --bg-dark: #0a0a0f;
-    --bg-glass: rgba(15, 15, 25, 0.6);
-    --bg-glass-hover: rgba(30, 30, 50, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    
-    --primary: #4deeea; /* Neon Cyan */
-    --secondary: #74ee15; /* Neon Green / Matrix */
-    --accent: #f000ff; /* Neon Purple */
-    
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0b0;
-    
+    --bg-dark: #ffffff;
+    --bg-glass: rgba(0, 0, 0, 0.04);
+    --bg-glass-hover: rgba(0, 0, 0, 0.08);
+    --glass-border: rgba(0, 0, 0, 0.12);
+
+    --primary: #000000;
+    --secondary: #222222;
+    --accent: #444444;
+
+    --text-primary: #000000;
+    --text-secondary: #555555;
+
     --font-main: 'Outfit', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 }
@@ -26,12 +26,12 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #0a0a0f;
+    background-color: #ffffff;
 }
 
 body {
     font-family: var(--font-main);
-    background-color: var(--bg-dark);
+    background-color: #ffffff;
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -42,25 +42,7 @@ body {
 }
 
 body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background:
-        radial-gradient(ellipse at 20% 50%, rgba(77, 238, 234, 0.07) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(240, 0, 255, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 80%, rgba(116, 238, 21, 0.05) 0%, transparent 50%),
-        linear-gradient(135deg, #050508 0%, #0a0a14 50%, #050508 100%);
-    animation: bgShift 12s ease-in-out infinite alternate;
-}
-
-@keyframes bgShift {
-    0%   { opacity: 1; }
-    50%  { opacity: 0.85; }
-    100% { opacity: 1; }
+    display: none;
 }
 
 /* Utilities */
@@ -70,15 +52,13 @@ body::before {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--glass-border);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
     transition: all 0.4s ease;
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000000;
+    -webkit-text-fill-color: #000000;
     display: inline-block;
 }
 
@@ -96,7 +76,7 @@ body::before {
     top: 0;
     width: 100%;
     z-index: 100;
-    background: rgba(10, 10, 15, 0.4);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--glass-border);
     padding: 1rem 0;
@@ -120,7 +100,7 @@ body::before {
 
 .logo-tag {
     color: var(--primary);
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 .logo-text {
@@ -207,14 +187,14 @@ body::before {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: rgba(77, 238, 234, 0.1);
+    background: rgba(0, 0, 0, 0.06);
     color: var(--primary);
     padding: 6px 16px;
     border-radius: 20px;
     font-family: var(--font-mono);
     font-size: 0.85rem;
     margin-bottom: 1.5rem;
-    border: 1px solid rgba(77, 238, 234, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .pulse {
@@ -222,14 +202,14 @@ body::before {
     height: 8px;
     background-color: var(--primary);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--primary);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     animation: pulse-anim 1.5s infinite;
 }
 
 @keyframes pulse-anim {
-    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(77, 238, 234, 0.7); }
-    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(77, 238, 234, 0); }
-    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(77, 238, 234, 0); }
+    0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4); }
+    70%  { transform: scale(1);    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
 }
 
 /* Profile Avatar Block */
@@ -255,7 +235,7 @@ body::before {
     border: 3px solid var(--primary);
     position: relative;
     z-index: 2;
-    box-shadow: 0 0 20px rgba(77, 238, 234, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .avatar-glow {
@@ -265,7 +245,7 @@ body::before {
     right: -10px;
     bottom: -10px;
     border-radius: 50%;
-    background: linear-gradient(45deg, var(--primary), var(--accent));
+    background: rgba(0, 0, 0, 0.08);
     z-index: 1;
     filter: blur(15px);
     opacity: 0.5;
@@ -273,8 +253,8 @@ body::before {
 }
 
 @keyframes pulse-avatar {
-    0% { opacity: 0.3; transform: scale(1); }
-    100% { opacity: 0.6; transform: scale(1.05); }
+    0%   { opacity: 0.2; transform: scale(1); }
+    100% { opacity: 0.4; transform: scale(1.05); }
 }
 
 .profile-info {
@@ -337,23 +317,23 @@ body::before {
 
 .primary-btn {
     background: var(--primary);
-    color: #000;
-    box-shadow: 0 0 20px rgba(77, 238, 234, 0.4);
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .primary-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 30px rgba(77, 238, 234, 0.6);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .secondary-btn {
-    background: var(--bg-glass);
+    background: transparent;
     color: var(--text-primary);
-    border: 1px solid var(--glass-border);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .secondary-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     transform: translateY(-2px);
 }
 
@@ -374,7 +354,7 @@ body::before {
 .header-line {
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, var(--glass-border), transparent);
+    background: linear-gradient(90deg, rgba(0,0,0,0.2), transparent);
 }
 
 /* Bio Section */
@@ -394,9 +374,9 @@ body::before {
     left: 40px;
     font-size: 3rem;
     color: var(--primary);
-    background: var(--bg-dark);
+    background: #ffffff;
     padding: 0 10px;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .bio-content p {
@@ -427,8 +407,8 @@ body::before {
 
 .skill-card:hover {
     transform: translateY(-10px);
-    border-color: rgba(77, 238, 234, 0.3);
-    box-shadow: 0 10px 40px rgba(77, 238, 234, 0.1);
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .skill-card i {
@@ -495,7 +475,7 @@ body::before {
 
 .project-tech-tags span {
     color: var(--primary);
-    background: rgba(77, 238, 234, 0.1);
+    background: rgba(0, 0, 0, 0.06);
     padding: 4px 10px;
     border-radius: 4px;
 }
@@ -508,11 +488,11 @@ body::before {
     gap: 12px;
 }
 
-/* Project Badge (e.g. "Live Product", "Research") */
+/* Project Badge */
 .project-badge {
     display: inline-block;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    color: #000;
+    background: var(--primary);
+    color: #ffffff;
     font-size: 0.72rem;
     font-weight: 700;
     font-family: var(--font-mono);
@@ -524,16 +504,16 @@ body::before {
 }
 
 .project-badge--research {
-    background: linear-gradient(90deg, var(--accent), #ff6be8);
-    color: #fff;
+    background: var(--accent);
+    color: #ffffff;
 }
 
-/* Featured card: cyan top border accent */
+/* Featured card: black top border accent */
 .project-card--featured {
     border-top: 2px solid var(--primary);
 }
 
-/* Research card: purple top border accent */
+/* Research card: gray top border accent */
 .project-card--research {
     border-top: 2px solid var(--accent);
 }
@@ -554,13 +534,13 @@ body::before {
 /* Live site link style */
 .project-link--live {
     color: var(--secondary) !important;
-    border: 1px solid rgba(116, 238, 21, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 4px 12px;
     border-radius: 6px;
 }
 
 .project-link--live:hover {
-    background: rgba(116, 238, 21, 0.1);
+    background: rgba(0, 0, 0, 0.06);
     color: var(--secondary) !important;
 }
 
@@ -582,7 +562,7 @@ body::before {
 .project-impact {
     margin-top: 1rem;
     padding-top: 0.8rem;
-    border-top: 1px dashed rgba(77, 238, 234, 0.2);
+    border-top: 1px dashed rgba(0, 0, 0, 0.15);
 }
 
 .project-links a {
@@ -596,7 +576,7 @@ body::before {
 }
 
 .project-links a:hover {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 /* Experience Timeline */
@@ -616,7 +596,7 @@ body::before {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, var(--primary), var(--glass-border), transparent);
+    background: linear-gradient(to bottom, var(--primary), rgba(0,0,0,0.1), transparent);
 }
 
 .timeline-item {
@@ -626,8 +606,8 @@ body::before {
 }
 
 .timeline-item:hover {
-    border-color: rgba(77, 238, 234, 0.4);
-    box-shadow: 0 5px 30px rgba(77, 238, 234, 0.1);
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.07);
 }
 
 .timeline-dot {
@@ -638,7 +618,7 @@ body::before {
     height: 1rem;
     background-color: var(--primary);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--primary);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-date {
@@ -678,8 +658,8 @@ body::before {
 
 .education-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(240, 0, 255, 0.3);
-    box-shadow: 0 10px 40px rgba(240, 0, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .edu-icon {
@@ -710,13 +690,13 @@ body::before {
 
 .edu-year {
     font-family: var(--font-mono);
-    color: var(--bg-dark);
-    background: var(--accent);
+    color: #ffffff;
+    background: var(--primary);
     padding: 6px 16px;
     border-radius: 20px;
     font-weight: 600;
     font-size: 0.9rem;
-    box-shadow: 0 0 15px rgba(240, 0, 255, 0.4);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Certificates Section */
@@ -737,8 +717,8 @@ body::before {
 
 .cert-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(116, 238, 21, 0.3);
-    box-shadow: 0 10px 40px rgba(116, 238, 21, 0.1);
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .cert-icon {
@@ -809,13 +789,13 @@ body::before {
 
 .rec-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 40px rgba(77, 238, 234, 0.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
 .rec-quote-icon {
     font-size: 2rem;
     color: var(--primary);
-    opacity: 0.5;
+    opacity: 0.3;
     line-height: 1;
 }
 
@@ -844,7 +824,7 @@ body::before {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(77,238,234,0.2), rgba(240,0,255,0.2));
+    background: rgba(0, 0, 0, 0.06);
     border: 2px solid var(--primary);
     display: flex;
     align-items: center;
@@ -857,7 +837,7 @@ body::before {
 .rec-avatar-placeholder--industry {
     border-color: var(--secondary);
     color: var(--secondary);
-    background: linear-gradient(135deg, rgba(116,238,21,0.15), rgba(77,238,234,0.1));
+    background: rgba(0, 0, 0, 0.04);
 }
 
 .rec-info {
@@ -917,27 +897,27 @@ body::before {
 }
 
 .rec-tag--academic {
-    background: rgba(77, 238, 234, 0.12);
+    background: rgba(0, 0, 0, 0.06);
     color: var(--primary);
-    border: 1px solid rgba(77, 238, 234, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .rec-tag--industry {
-    background: rgba(116, 238, 21, 0.12);
+    background: rgba(0, 0, 0, 0.05);
     color: var(--secondary);
-    border: 1px solid rgba(116, 238, 21, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .rec-tag--ops {
-    background: rgba(255, 165, 0, 0.12);
-    color: #ffaa00;
-    border: 1px solid rgba(255, 165, 0, 0.3);
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--accent);
+    border: 1px solid rgba(0, 0, 0, 0.10);
 }
 
 .rec-avatar-placeholder--ops {
-    border-color: #ffaa00;
-    color: #ffaa00;
-    background: linear-gradient(135deg, rgba(255,165,0,0.15), rgba(116,238,21,0.08));
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(0, 0, 0, 0.04);
 }
 
 /* Footer */
@@ -951,7 +931,7 @@ body::before {
 }
 
 .footer i {
-    color: var(--accent);
+    color: var(--primary);
 }
 
 /* Responsive */
@@ -996,6 +976,6 @@ body::before {
         padding-left: 1rem;
     }
     .timeline-dot {
-        left: -1.35rem; /* Adjust dot position for mobile */
+        left: -1.35rem;
     }
 }
