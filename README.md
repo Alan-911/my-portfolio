@@ -1,39 +1,51 @@
-# Portfolio Site 🌐
-> **My personal engineering nexus showcasing full-stack AI, ML, and enterprise operations.**
+# Portfolio — alan-911.github.io/my-portfolio
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+Personal site for **Yves Alain Iragena** — Full-Stack AI Engineer and Graduate
+Research Assistant at the Multimodal AI Lab (MAIL), Catholic University of America.
 
-The architecture behind `Alan-911.github.io`. More than just a resume, this serves as an interactive hub to visually trace my development journey, read my latest research pipelines, and interact with live implementations of my AI agents. 
+**[Visit the site →](https://alan-911.github.io/my-portfolio/)**
 
-### ✨ Key Features
-- **Reactive UI Flow:** Deeply optimized Next.js/React layout with high performance metrics.
-- **Dynamic Projects Grid:** Highly scannable breakdown of academic and commercial enterprise apps.
-- **Animated Micro-Interactions:** Modern UI aesthetics providing a premium visitor experience.
-- **Static Site Performance:** Fast load metrics directly driven via GitHub Pages.
+## What this is
 
----
+A hand-written static site. No framework, no build step, no dependencies to
+install — three files and a deploy workflow:
 
-### 🏗 Architecture & Workflows
-<!-- ⚠️ IMPORTANT: LEAVE YOUR EXISTING PIPELINES AND FLOWCHARTS HERE -->
-*(Please retain the project's existing pipelines and flowcharts in this section untouched if any exist.)*
+| File | Purpose |
+|------|---------|
+| `index.html` | All content and structure |
+| `style.css` | Design system, layout, responsive rules, print styles |
+| `script.js` | Scroll reveals, sticky nav, mobile menu, project filters |
+| `.github/workflows/pages.yml` | Deploys `main` to GitHub Pages on push |
 
----
+Fonts come from Google Fonts and icons from Font Awesome, both over CDN.
+Everything else is local.
 
-### 📺 Screenshots
-> *[Placeholder: Insert a full-page desktop/mobile mockup of your website]*
+## Running it locally
 
----
+There is nothing to build. Open `index.html` in a browser, or serve the folder
+so that relative paths behave exactly as they do in production:
 
-### 🚀 Setup & Installation
 ```bash
-# Clone the repository
 git clone https://github.com/Alan-911/my-portfolio.git
 cd my-portfolio
-
-# Install packages
-npm install
-
-# Start the sandbox
-npm run dev
+python -m http.server 8000
 ```
+
+Then open <http://localhost:8000>.
+
+## Deploying
+
+Push to `main`. The GitHub Actions workflow uploads the repository root as a
+Pages artifact and publishes it. No other step is needed.
+
+## Editing the content
+
+- **Projects** live in the `#work` section as `<article class="card" data-cat="...">`
+  blocks. `data-cat` must be one of `research`, `agents`, `fullstack` or `data` so
+  the filter buttons pick it up — and the counts in `.filters` are written by hand,
+  so update them when you add or remove a card.
+- **Scroll reveals** are opt-in: add `class="reveal"` to any element. Elements
+  already on screen are shown immediately, and a failsafe reveals everything
+  2.5s after load, so a card cannot get stuck invisible.
+- **Résumé**: replace `Resume_Yves_Iragena_v7.pdf` and update the two download
+  links in `index.html`.

@@ -3,483 +3,649 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yves Alain Iragena - AI Engineer building Agentic AI workflows.">
-    <title>Yves Alain Iragena | Agentic AI Engineer</title>
-    
-    <!-- Performance / Preload -->
-    <link rel="preload" href="style.css" as="style">
-    
-    <!-- Google Fonts -->
+    <title>Yves Alain Iragena — AI Engineer &amp; Graduate Researcher</title>
+    <meta name="description" content="Yves Alain Iragena — Full-Stack AI Engineer and Graduate Research Assistant at the MAIL Lab, Catholic University of America. I build multimodal ML models, LLM agents, and the systems that ship them.">
+    <meta name="author" content="Yves Alain Iragena">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yves Alain Iragena — AI Engineer &amp; Graduate Researcher">
+    <meta property="og:description" content="I build AI systems end to end — from research models to the APIs, agents and dashboards that put them in front of people.">
+    <meta property="og:url" content="https://alan-911.github.io/my-portfolio/">
+    <meta property="og:image" content="https://alan-911.github.io/my-portfolio/avatar.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://alan-911.github.io/my-portfolio/">
+    <link rel="icon" href="avatar.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
-    
-    <!-- Font Awesome -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="glass-nav">
-        <div class="nav-content">
-            <div class="logo">
-                <span class="logo-tag">&lt;</span>
-                <span class="logo-text">YAI</span>
-                <span class="logo-tag">/&gt;</span>
+<a class="skip-link" href="#work">Skip to my work</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+    <div class="nav-inner">
+        <a class="logo" href="#top" aria-label="Back to top">
+            <span class="logo-tag">&lt;</span><span class="logo-text">YAI</span><span class="logo-tag">/&gt;</span>
+        </a>
+
+        <nav class="nav-links" id="nav-links" aria-label="Main">
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#reviews">References</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="wrap hero-grid">
+            <div class="hero-main">
+                <p class="availability">
+                    <span class="dot" aria-hidden="true"></span>
+                    Available now for internships &amp; co-ops — F-1 CPT, no sponsorship required
+                </p>
+
+                <h1>Yves Alain <span>Iragena</span></h1>
+                <p class="role">Full-Stack AI Engineer &amp; Graduate Researcher</p>
+
+                <p class="lede">
+                    I build AI systems end to end — the research model, the API around it, and the
+                    interface someone actually uses. Right now I'm a Graduate Research Assistant at the
+                    <strong>Multimodal AI Lab (MAIL)</strong> at the Catholic University of America, working on
+                    audio deepfake detection and retrieval systems that don't make things up.
+                </p>
+
+                <p class="meta-line">
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Washington, D.C.</span>
+                    <span><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> M.S. Data Analytics, expected July 2027</span>
+                </p>
+
+                <div class="actions">
+                    <a class="btn btn-primary" href="#work">
+                        See my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-ghost" href="Resume_Yves_Iragena_v7.pdf" download>
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Résumé (PDF)
+                    </a>
+                </div>
+
+                <div class="socials">
+                    <a href="mailto:iragena@cua.edu" aria-label="Email Yves Alain Iragena">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i> iragena@cua.edu
+                    </a>
+                    <a href="https://github.com/Alan-911" target="_blank" rel="noopener" aria-label="GitHub profile">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/yves-alain-iragena-91b44b391" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+                    </a>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Capabilities</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#recommendations">Reviews</a></li>
+
+            <aside class="hero-side">
+                <img src="avatar.png" alt="Portrait of Yves Alain Iragena" class="avatar" width="200" height="200">
+                <div class="side-card">
+                    <h2>What I'm working on</h2>
+                    <ul class="side-list">
+                        <li>
+                            <strong>Audio deepfake detection</strong>
+                            A model that spots AI-generated speech from generators it has never heard — submitted to the ICME 2026 Grand Challenge.
+                        </li>
+                        <li>
+                            <strong>RAG that stays honest</strong>
+                            A three-layer defence stack — prompt shielding, semantic re-ranking, output validation — across Pinecone, FAISS and Chroma.
+                        </li>
+                        <li>
+                            <strong>Agents that do real jobs</strong>
+                            Email triage, e-commerce SEO, live business monitoring — all running in production, not in a notebook.
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- ============ NUMBERS ============ -->
+    <section class="stats" aria-label="Results at a glance">
+        <div class="wrap stats-grid">
+            <div class="stat reveal">
+                <span class="stat-num">0.8923</span>
+                <span class="stat-label">macro-F1 on audio deepfake detection, against a 0.63 challenge baseline</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-num">82<small>%</small></span>
+                <span class="stat-label">fewer hallucinations after building an adversarial RAG security framework</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-num">&lt;50<small>ms</small></span>
+                <span class="stat-label">from database write to rendered change in the real-time ops dashboard</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-num">20<small>+ hrs/wk</small></span>
+                <span class="stat-label">of manual data work removed by ETL pipelines I built and shipped</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="section">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="eyebrow">01 — Selected work</p>
+                <h2>Seven projects, and what each one actually does</h2>
+                <p class="section-sub">
+                    Every project below is public on GitHub. Five of them are deployed and you can click
+                    through to a running version right now.
+                </p>
+            </header>
+
+            <div class="filters" role="group" aria-label="Filter projects by type">
+                <button class="chip is-active" data-filter="all">All <span>7</span></button>
+                <button class="chip" data-filter="research">Research <span>1</span></button>
+                <button class="chip" data-filter="agents">AI agents &amp; LLM systems <span>4</span></button>
+                <button class="chip" data-filter="fullstack">Full-stack <span>1</span></button>
+                <button class="chip" data-filter="data">Data science <span>1</span></button>
+            </div>
+
+            <div class="projects" id="projects">
+
+                <!-- 1. DPADD-ES -->
+                <article class="card reveal is-flagship" data-cat="research">
+                    <div class="card-top">
+                        <span class="tag tag-strong">Flagship research</span>
+                        <span class="tag">ICME 2026 submission</span>
+                    </div>
+                    <h3>DPADD-ES — Audio Deepfake Detection</h3>
+                    <p class="card-lede">
+                        A detector that tells real speech from AI-generated speech — even when the fake comes
+                        from a voice generator it has never encountered before.
+                    </p>
+                    <dl class="card-facts">
+                        <dt>The problem</dt>
+                        <dd>Detectors learn the background noise instead of the voice, so they collapse on new generators. The challenge baseline drops from 0.95 F1 in validation to 0.63 in test.</dd>
+                        <dt>What I built</dt>
+                        <dd>A mask module that splits each recording into two orthogonal latent streams — speech and environment — using a Frobenius orthogonality loss, so the model can only learn artefacts in the voice itself. Wav2Vec2 → BiLSTM → multi-head attention → 5-class head.</dd>
+                        <dt>Result</dt>
+                        <dd><strong>0.8923 macro-F1</strong> on CompSpoofV2 (250,000 clips, 5 classes). Submitted to the ICME 2026 Grand Challenge, ESDD2 track.</dd>
+                    </dl>
+                    <ul class="stack">
+                        <li>PyTorch</li><li>Wav2Vec2</li><li>BiLSTM</li><li>Multi-head attention</li><li>CompSpoofV2</li>
+                    </ul>
+                    <div class="card-links">
+                        <a href="https://dpadd-es.vercel.app" target="_blank" rel="noopener" class="link-live">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live showcase
+                        </a>
+                        <a href="https://github.com/Alan-911/Audio-Deepfake-Detection" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. AuraCommerce -->
+                <article class="card reveal" data-cat="agents">
+                    <div class="card-top">
+                        <span class="tag tag-live">Live</span>
+                        <span class="tag">AI agents</span>
+                    </div>
+                    <h3>AuraCommerce — Agentic BI Dashboard</h3>
+                    <p class="card-lede">
+                        Three AI agents that watch an e-commerce database around the clock and explain, in
+                        plain language, what just changed.
+                    </p>
+                    <dl class="card-facts">
+                        <dt>The problem</dt>
+                        <dd>Operations teams need live KPIs and anomaly alerts — but a dashboard that goes dark whenever the LLM API does is worse than no dashboard at all.</dd>
+                        <dt>What I built</dt>
+                        <dd>An Analyst → Sentinel → Reporter pipeline on FastAPI. The Sentinel reasons with GPT-4o-mini when an API key is present and falls back to deterministic rule logic when it isn't, so the system never has a hard dependency on the model.</dd>
+                        <dt>Result</dt>
+                        <dd>Zero-downtime anomaly detection, six live Plotly.js charts, on-demand PDF reports, and Prometheus metrics for scraping.</dd>
+                    </dl>
+                    <ul class="stack">
+                        <li>Python</li><li>FastAPI</li><li>GPT-4o-mini</li><li>SQLite</li><li>Plotly.js</li><li>Prometheus</li>
+                    </ul>
+                    <div class="card-links">
+                        <a href="https://enterprise-agent-framework.vercel.app" target="_blank" rel="noopener" class="link-live">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live demo
+                        </a>
+                        <a href="https://github.com/Alan-911/enterprise-agent-framework" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. Gmail AI -->
+                <article class="card reveal" data-cat="agents">
+                    <div class="card-top">
+                        <span class="tag tag-live">Live</span>
+                        <span class="tag">AI agents</span>
+                    </div>
+                    <h3>Gmail AI Semantic Autopilot</h3>
+                    <p class="card-lede">
+                        An always-on daemon that reads your inbox with Claude and files it for you — by
+                        meaning, not by keyword.
+                    </p>
+                    <dl class="card-facts">
+                        <dt>The problem</dt>
+                        <dd>Gmail's filters match words, not intent. "I'd love to reconnect" from a cold sales rep and from a client chasing a contract deadline look identical to a rule engine.</dd>
+                        <dt>What I built</dt>
+                        <dd>An OAuth2 polling daemon that passes every unread message to Claude Haiku, which classifies it into one of seven intent categories and applies a label. Cold outreach and newsletters are archived before they reach the inbox — nothing is ever deleted.</dd>
+                        <dt>Result</dt>
+                        <dd><strong>98%+ accuracy</strong> over 1,400+ emails, roughly 10 hours a week saved, at under $0.01 a day in API cost.</dd>
+                    </dl>
+                    <ul class="stack">
+                        <li>Python</li><li>Claude Haiku</li><li>Anthropic SDK</li><li>Gmail API</li><li>FastAPI</li><li>React</li>
+                    </ul>
+                    <div class="card-links">
+                        <a href="https://gmail-ai-agent-five.vercel.app" target="_blank" rel="noopener" class="link-live">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live demo
+                        </a>
+                        <a href="https://github.com/Alan-911/gmail-ai-agent" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. JP AutoHub -->
+                <article class="card reveal" data-cat="agents">
+                    <div class="card-top">
+                        <span class="tag tag-live">Live product</span>
+                        <span class="tag">AI agents</span>
+                    </div>
+                    <h3>JP AutoHub — Multi-Agent SEO Engine</h3>
+                    <p class="card-lede">
+                        The AI content pipeline running a real auto-parts store, from raw inventory rows to
+                        published, ranking product pages.
+                    </p>
+                    <dl class="card-facts">
+                        <dt>The problem</dt>
+                        <dd>A Delaware salvage-parts business had no digital footprint at all, in one of the most competitive SEO categories online.</dd>
+                        <dt>What I built</dt>
+                        <dd>A LangChain multi-agent pipeline covering the full content lifecycle — VIN verification, category mapping, keyword research, description and metadata generation, then publishing. Inventory is vectorised so customers can search in plain language. Hosted on AWS with PostgreSQL.</dd>
+                        <dt>Result</dt>
+                        <dd>From zero online presence to a ranking storefront, with roughly <strong>22% less manual catalogue work</strong> for the team.</dd>
+                    </dl>
+                    <ul class="stack">
+                        <li>Python</li><li>LangChain</li><li>AWS</li><li>PostgreSQL</li><li>FastAPI</li>
+                    </ul>
+                    <div class="card-links">
+                        <a href="https://jpautohub.com" target="_blank" rel="noopener" class="link-live">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit jpautohub.com
+                        </a>
+                        <a href="https://github.com/Alan-911/JP-autohub-project" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 5. Real-time dashboard -->
+                <article class="card reveal" data-cat="fullstack">
+                    <div class="card-top">
+                        <span class="tag tag-live">Live</span>
+                        <span class="tag">Full-stack</span>
+                    </div>
+                    <h3>Real-Time Ops Dashboard</h3>
+                    <p class="card-lede">
+                        A shared task board where a database write appears on every open screen faster than
+                        you can notice it.
+                    </p>
+                    <dl class="card-facts">
+                        <dt>The problem</dt>
+                        <dd>Multi-agent systems need live visibility. Polling loops add lag, waste requests, and regularly show people state that is already out of date.</dd>
+                        <dt>What I built</dt>
+                        <dd>A Next.js client subscribed to Supabase <code>postgres_changes</code> over WebSockets, applying INSERT, UPDATE and DELETE events straight to React state. Writes render optimistically and roll back automatically if the server rejects them.</dd>
+                        <dt>Result</dt>
+                        <dd><strong>Under 50 ms</strong> from database write to rendered change. No polling, no refresh button.</dd>
+                    </dl>
+                    <ul class="stack">
+                        <li>Next.js 16</li><li>React 19</li><li>TypeScript 5</li><li>Supabase Realtime</li><li>Tailwind CSS 4</li>
+                    </ul>
+                    <div class="card-links">
+                        <a href="https://real-time-dashboard-blush.vercel.app" target="_blank" rel="noopener" class="link-live">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live demo
+                        </a>
+                        <a href="https://github.com/Alan-911/real-time-dashboard" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 6. NotebookLM MCP -->
+                <article class="card reveal" data-cat="agents">
+                    <div class="card-top">
+                        <span class="tag">AI agents</span>
+                        <span class="tag">Open source</span>
+                    </div>
+                    <h3>NotebookLM MCP Server</h3>
+                    <p class="card-lede">
+                        A bridge that lets Claude Desktop read, cite and reason over your NotebookLM research
+                        without leaving your editor.
+                    </p>
+                    <dl class="card-facts">
+                        <dt>The problem</dt>
+                        <dd>Carefully curated NotebookLM knowledge bases are locked away from the tools where the work actually happens, so people copy and paste — and lose the citations.</dd>
+                        <dt>What I built</dt>
+                        <dd>A TypeScript Model Context Protocol server that maps exported notebooks into Claude Desktop as retrievable context, with hard boundaries on what the model is allowed to draw from.</dd>
+                        <dt>Result</dt>
+                        <dd>Hybrid-RAG answers bounded strictly to notebook context, which sharply reduces hallucination on research questions. Ships with Windows-first setup and troubleshooting docs.</dd>
+                    </dl>
+                    <ul class="stack">
+                        <li>TypeScript</li><li>Node.js 18+</li><li>MCP</li><li>Claude Desktop</li>
+                    </ul>
+                    <div class="card-links">
+                        <a href="https://github.com/Alan-911/notebook-rag-agent" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 7. Clinical comorbidity -->
+                <article class="card reveal" data-cat="data">
+                    <div class="card-top">
+                        <span class="tag tag-live">Live</span>
+                        <span class="tag">Data science</span>
+                    </div>
+                    <h3>Clinical Comorbidity Dashboard</h3>
+                    <p class="card-lede">
+                        Which diagnoses travel together? Association-rule mining across 2,440 clinical visits,
+                        made explorable.
+                    </p>
+                    <dl class="card-facts">
+                        <dt>The problem</dt>
+                        <dd>Comorbidity patterns sit buried in visit records and are almost never surfaced in a form a clinician can actually poke at.</dd>
+                        <dt>What I built</dt>
+                        <dd>An FP-Growth mining pipeline (minimum support 0.01, minimum confidence 0.50) over one-hot encoded visit transactions, wrapped in a Streamlit dashboard with real-time filtering by primary and secondary diagnosis.</dd>
+                        <dt>Result</dt>
+                        <dd>Roughly <strong>300+ association rules</strong>, filterable live across dashboard, appointments, labs, demographics and advisory panels. Deployed to Streamlit Cloud.</dd>
+                    </dl>
+                    <ul class="stack">
+                        <li>Python</li><li>FP-Growth</li><li>mlxtend</li><li>pandas</li><li>Streamlit</li>
+                    </ul>
+                    <div class="card-links">
+                        <a href="https://clinical-comorbidity-dashboard.streamlit.app" target="_blank" rel="noopener" class="link-live">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live dashboard
+                        </a>
+                        <a href="https://github.com/Alan-911/clinical-comorbidity-dashboard" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="projects-more">
+                <a href="https://github.com/Alan-911?tab=repositories" target="_blank" rel="noopener">
+                    Browse every repository on GitHub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section section-alt">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="eyebrow">02 — Experience</p>
+                <h2>Where I've done this work</h2>
+            </header>
+
+            <ol class="timeline">
+                <li class="tl-item reveal">
+                    <div class="tl-when">Jan 2025 — Present</div>
+                    <div class="tl-body">
+                        <h3>Graduate Research Assistant</h3>
+                        <p class="tl-org">Multimodal AI Lab (MAIL) · Catholic University of America · Washington, D.C.</p>
+                        <ul class="tl-points">
+                            <li>Built <strong>DPADD-ES</strong>, a mask-based architecture that separates speech from environment via a Frobenius orthogonality loss, reaching <strong>0.8923 macro-F1</strong> on CompSpoofV2 (250K clips, 5 classes). Submitted to the ICME 2026 Grand Challenge (ESDD2).</li>
+                            <li>Cut hallucinations by <strong>82%</strong> with an adversarial RAG security framework — prompt shielding, semantic re-ranking and output validation — across Pinecone, FAISS and Chroma.</li>
+                            <li>Deploying a real-time synthetic-speech classifier (Wav2Vec2 + BiLSTM + attention) into the lab's internal QA pipeline: <strong>500+ audio submissions a day</strong> at under 200 ms inference latency.</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="tl-item reveal">
+                    <div class="tl-when">Oct 2023 — Jan 2025</div>
+                    <div class="tl-body">
+                        <h3>AI &amp; Data Engineer</h3>
+                        <p class="tl-org">Health Target Parapharmacy Ltd · Kigali, Rwanda</p>
+                        <ul class="tl-points">
+                            <li>Engineered Python and SQL ETL pipelines handling <strong>10,000+ transactions a month</strong> across a 12,000-SKU catalogue. Automated anomaly detection removed <strong>20+ hours of manual work a week</strong> and cut data-entry errors by <strong>70%</strong> across four retail locations.</li>
+                            <li>Built an inventory intelligence system on pandas with rule-based forecasting, spanning the wholesale and import divisions — about <strong>30% lower overstock carrying costs</strong>, freeing an estimated <strong>$40K a year</strong> in working capital and ending fulfilment delays.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="eyebrow">03 — Toolkit</p>
+                <h2>What I work with</h2>
+                <p class="section-sub">Grouped by what I use it for, not by how impressive the logo looks.</p>
+            </header>
+
+            <div class="skills">
+                <div class="skill reveal">
+                    <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                    <h3>Machine learning</h3>
+                    <p>Training and evaluating models — mostly audio and vision.</p>
+                    <ul class="stack">
+                        <li>PyTorch</li><li>Wav2Vec2</li><li>BiLSTM</li><li>Multi-head attention</li><li>CNNs</li><li>scikit-learn</li><li>HuggingFace</li>
+                    </ul>
+                </div>
+                <div class="skill reveal">
+                    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                    <h3>LLM systems &amp; agents</h3>
+                    <p>Getting language models to do reliable, bounded work.</p>
+                    <ul class="stack">
+                        <li>MCP</li><li>LangGraph</li><li>LangChain</li><li>RAG</li><li>Pinecone</li><li>FAISS</li><li>Chroma</li><li>Claude API</li><li>OpenAI API</li>
+                    </ul>
+                </div>
+                <div class="skill reveal">
+                    <i class="fa-solid fa-server" aria-hidden="true"></i>
+                    <h3>Backend &amp; infrastructure</h3>
+                    <p>Serving models and data at something resembling production quality.</p>
+                    <ul class="stack">
+                        <li>Python</li><li>FastAPI</li><li>Node.js</li><li>PostgreSQL</li><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>GitHub Actions</li>
+                    </ul>
+                </div>
+                <div class="skill reveal">
+                    <i class="fa-solid fa-display" aria-hidden="true"></i>
+                    <h3>Frontend</h3>
+                    <p>Building the interface so the work is visible to people who aren't engineers.</p>
+                    <ul class="stack">
+                        <li>React</li><li>Next.js</li><li>TypeScript</li><li>WebSockets</li><li>Tailwind CSS</li><li>Streamlit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section section-alt">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="eyebrow">04 — Education &amp; certifications</p>
+                <h2>Background</h2>
+            </header>
+
+            <div class="edu-list">
+                <div class="edu reveal">
+                    <div class="edu-main">
+                        <h3>M.S. Data Analytics — Multimodal AI focus</h3>
+                        <p class="edu-org">The Catholic University of America · Washington, D.C.</p>
+                        <p class="edu-detail">GPA 3.7 / 4.0 · Research assistantship at the MAIL Lab · F-1 CPT eligible</p>
+                    </div>
+                    <div class="edu-when">Expected July 2027</div>
+                </div>
+
+                <div class="edu reveal">
+                    <div class="edu-main">
+                        <h3>B.S. Computer Science — Honours &amp; Distinction</h3>
+                        <p class="edu-org">KL University · Vijayawada, India</p>
+                        <p class="edu-detail">CGPA 8.9 / 10</p>
+                    </div>
+                    <div class="edu-when">2019 — 2023</div>
+                </div>
+            </div>
+
+            <h3 class="sub-head">Certifications</h3>
+            <ul class="certs">
+                <li class="cert reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <span class="cert-name">Claude in Amazon Bedrock</span>
+                    <span class="cert-by">AWS &amp; Anthropic</span>
+                </li>
+                <li class="cert reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <span class="cert-name">Building with the Claude API</span>
+                    <span class="cert-by">Anthropic</span>
+                </li>
+                <li class="cert reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <span class="cert-name">Certified Data Scientist</span>
+                    <span class="cert-by">Professional certification</span>
+                </li>
+                <li class="cert reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <span class="cert-name">Data Analyst Associate</span>
+                    <span class="cert-by">Professional certification</span>
+                </li>
+                <li class="cert reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <span class="cert-name">Data Analysis &amp; Visualisation</span>
+                    <span class="cert-by">Professional certification</span>
+                </li>
             </ul>
         </div>
-    </nav>
+    </section>
 
-    <!-- Main ContentWrapper -->
-    <main class="content-wrapper">
-        
-        <!-- Hero Section (Two-Column Layout) -->
-        <section class="hero" id="home">
-            <!-- LEFT: Identity + CTAs -->
-            <div class="hero-content">
-                <div class="status-badge">
-                    <span class="pulse"></span>
-                    Initializing Agentic Workflows...
-                </div>
+    <!-- ============ REFERENCES ============ -->
+    <section id="reviews" class="section">
+        <div class="wrap">
+            <header class="section-head">
+                <p class="eyebrow">05 — References</p>
+                <h2>People I've worked for</h2>
+                <p class="section-sub">Contact details included — they're happy to be reached.</p>
+            </header>
 
-                <h1 class="hero-title">Yves Alain <span>Iragena</span></h1>
-                <h2 class="hero-subtitle">Applied ML Engineer &amp; Graduate Researcher</h2>
-                <span class="profile-location"><i class="fa-solid fa-location-dot"></i> Washington D.C., USA &nbsp;·&nbsp; F-1 CPT · Available Summer / Fall 2026</span>
+            <div class="quotes">
+                <figure class="quote reveal">
+                    <blockquote>
+                        Yves Alain has shown exceptional technical maturity in developing DPADD-ES, our
+                        mask-based architecture for audio deepfake detection. The work reaches
+                        <strong>0.8923 macro-F1</strong> on CompSpoofV2 and has been submitted to the
+                        <strong>ICME 2026 Grand Challenge</strong>. The ability to bridge complex mathematical
+                        modelling with real-world security applications marks a top-tier AI researcher.
+                    </blockquote>
+                    <figcaption>
+                        <span class="q-name">Dr. Hanseok Ko</span>
+                        <span class="q-role">Professor &amp; Newton-Bennett Endowed Chair · Director, MAIL Lab</span>
+                        <span class="q-org">The Catholic University of America</span>
+                        <a href="mailto:koha@cua.edu" class="q-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> koha@cua.edu</a>
+                    </figcaption>
+                </figure>
 
-                <p class="hero-description">
-                    <strong>Multimodal AI &nbsp;·&nbsp; LLM Systems &nbsp;·&nbsp; Audio Deepfake Detection</strong><br>
-                    Graduate Research Assistant at MAIL Lab, CUA — building production ML pipelines and agentic systems from research to deployment.
-                </p>
-                <div class="cta-group">
-                    <a href="#projects" class="btn primary-btn" aria-label="Explore Projects">
-                        <i class="fa-solid fa-microchip"></i> Explore Work
-                    </a>
-                    <a href="Resume_Yves_Iragena_v7.pdf" class="btn primary-btn" aria-label="Download Resume" download>
-                        <i class="fa-solid fa-file-arrow-down"></i> Resume
-                    </a>
-                    <a href="mailto:iragena@cua.edu" class="btn secondary-btn" aria-label="Email Me">
-                        <i class="fa-solid fa-envelope"></i> Email Me
-                    </a>
-                    <a href="https://www.linkedin.com/in/yves-alain-iragena-91b44b391" target="_blank" class="btn secondary-btn" aria-label="LinkedIn Profile">
-                        <i class="fa-brands fa-linkedin"></i> Connect
-                    </a>
-                    <a href="https://github.com/Alan-911" target="_blank" class="btn secondary-btn" aria-label="GitHub Profile">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
+                <figure class="quote reveal">
+                    <blockquote>
+                        Yves Alain didn't just build a website for JP AutoHub — they engineered a
+                        <strong>growth engine</strong>. By architecting an AI-first SEO strategy and deploying
+                        autonomous agents to handle site optimisation, they moved our digital presence from a
+                        standard catalogue to a platform that competes. The approach saved us countless manual
+                        hours. A developer who understands the business impact of AI.
+                    </blockquote>
+                    <figcaption>
+                        <span class="q-name">Jonas Sibomana</span>
+                        <span class="q-role">Founder &amp; CEO</span>
+                        <span class="q-org">JP AutoHub</span>
+                        <a href="https://jpautohub.com" target="_blank" rel="noopener" class="q-link"><i class="fa-solid fa-globe" aria-hidden="true"></i> jpautohub.com</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="quote reveal">
+                    <blockquote>
+                        In our collaborative projects on agentic systems, Yves Alain demonstrated an impressive
+                        command of deep learning architectures and the applied discipline required to push
+                        research benchmarks. The ability to rapidly prototype, iterate and rigorously evaluate
+                        models — particularly around audio signal integrity — speaks to a researcher ready for
+                        frontier AI work.
+                    </blockquote>
+                    <figcaption>
+                        <span class="q-name">Dr. Minhee Jun</span>
+                        <span class="q-role">Research Scientist, MAIL Lab</span>
+                        <span class="q-org">The Catholic University of America</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="quote reveal">
+                    <blockquote>
+                        Yves Alain was instrumental in streamlining the data and sales operations for our
+                        pharmaceutical supply chain, managing complex data across our wholesale and import
+                        divisions. Their technical approach to inventory and sales-target monitoring
+                        <strong>significantly improved our reporting accuracy and operational efficiency</strong>.
+                        A disciplined professional who bridges data analysis and fast-moving business needs.
+                    </blockquote>
+                    <figcaption>
+                        <span class="q-name">Assoumpta</span>
+                        <span class="q-role">Sales Manager</span>
+                        <span class="q-org">Health Target Parapharmacy Ltd · Kigali, Rwanda</span>
+                        <a href="mailto:healthtarget18@gmail.com" class="q-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> healthtarget18@gmail.com</a>
+                    </figcaption>
+                </figure>
             </div>
+        </div>
+    </section>
 
-            <!-- RIGHT: Avatar + About Bio -->
-            <div class="hero-right" id="about">
-                <div class="avatar-container">
-                    <img src="avatar.png" alt="Yves Alain Iragena" class="profile-avatar">
-                    <div class="avatar-glow"></div>
-                </div>
-
-                <div class="hero-about">
-                    <h3 class="hero-about-title">About</h3>
-                    <p>
-                        AI Engineer specializing in designing scalable agentic AI workflows, Large Language Models (LLMs), and high-performance Computer Vision pipelines. Experienced in translating research-heavy AI concepts into deployable FastAPI microservices and building multi-step AI systems with retrieval and reasoning capabilities.
-                    </p>
-                    <p>
-                        Proven track record in designing stateful multi-agent systems and Hybrid-RAG architectures that reduce hallucinations and optimize inference latency. Seeking to leverage deep technical expertise in multimodal AI for high-impact engineering roles.
-                    </p>
-                </div>
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+        <div class="wrap contact-inner">
+            <p class="eyebrow">06 — Contact</p>
+            <h2>Looking for someone who can take a model all the way to production?</h2>
+            <p class="contact-sub">
+                I'm available now for internships and co-ops, and open to full-time roles from July 2027.
+                F-1 CPT — no sponsorship required. The fastest way to reach me is email.
+            </p>
+            <div class="actions">
+                <a class="btn btn-primary" href="mailto:iragena@cua.edu">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> iragena@cua.edu
+                </a>
+                <a class="btn btn-ghost" href="Resume_Yves_Iragena_v7.pdf" download>
+                    <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download résumé
+                </a>
             </div>
-        </section>
-
-        <!-- Core Tech Stack -->
-        <section class="skills-section" id="skills">
-            <div class="section-header">
-                <h2>01. <span class="gradient-text">Capabilities</span></h2>
-                <div class="header-line"></div>
+            <div class="socials">
+                <a href="https://github.com/Alan-911" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> github.com/Alan-911</a>
+                <a href="https://www.linkedin.com/in/yves-alain-iragena-91b44b391" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
             </div>
-            
-            <div class="skills-grid">
-                <div class="skill-card glass-panel">
-                    <i class="fa-solid fa-brain"></i>
-                    <h3>AI / ML</h3>
-                    <p>PyTorch · Wav2Vec2 · BiLSTM · Attention · CNN · Scikit-learn · NumPy · pandas</p>
-                </div>
-                <div class="skill-card glass-panel">
-                    <i class="fa-solid fa-robot"></i>
-                    <h3>LLM Systems</h3>
-                    <p>LangGraph · LangChain · MCP · RAG · Pinecone · FAISS · Chroma · Claude API · OpenAI API</p>
-                </div>
-                <div class="skill-card glass-panel">
-                    <i class="fa-solid fa-server"></i>
-                    <h3>Backend / Infra</h3>
-                    <p>Python · FastAPI · Node.js · PostgreSQL · Docker · Kubernetes · AWS · GitHub Actions</p>
-                </div>
-                <div class="skill-card glass-panel">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Frontend</h3>
-                    <p>React · Next.js · TypeScript · WebSockets · Tailwind CSS</p>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Experience Section -->
-        <section class="experience-section" id="experience">
-            <div class="section-header">
-                <h2>02. <span class="gradient-text">Work Experience</span></h2>
-                <div class="header-line"></div>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item glass-panel">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">January 2025 – Present</div>
-                    <h3 class="timeline-title">Graduate Research Assistant</h3>
-                    <h4 class="timeline-company"><i class="fa-solid fa-flask"></i> MAIL Lab · Catholic University of America · Washington D.C.</h4>
-                    <p>Developing DPADD-ES, a mask-based audio deepfake detection architecture — 0.8923 macro-F1 on CompSpoofV2 (250K clips), submitted to ICME 2026 Grand Challenge (ESDD2). Built adversarial RAG security framework achieving 82% hallucination reduction across Pinecone, FAISS, and Chroma.</p>
-                </div>
-                <div class="timeline-item glass-panel">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">October 2023 – January 2025</div>
-                    <h3 class="timeline-title">Data &amp; Operations Analyst</h3>
-                    <h4 class="timeline-company"><i class="fa-solid fa-briefcase"></i> Health Target Parapharmacy Ltd · Kigali, Rwanda</h4>
-                    <p>Built Python and SQL automation pipelines eliminating 20+ hrs/week of manual data processing — 70% reduction in data entry errors across multi-location retail operations. Designed and deployed inventory tracking system across the company's wholesale and import divisions.</p>
-                </div>
-                <div class="timeline-item glass-panel">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">April 2023 - August 2023</div>
-                    <h3 class="timeline-title">Data Entry & Analysis Operator</h3>
-                    <h4 class="timeline-company"><i class="fa-solid fa-chart-line"></i> HEALTH TARGET COMPLEX</h4>
-                    <p>Managed global data tracking for suppliers across China, India, and Malaysia. Streamlined entry processes to enhance operational efficiency, monitored performance metrics, and analyzed complex data trends to inform high-level inventory decisions.</p>
-                </div>
-            </div>
-        </section>
+</main>
 
-        <!-- Education Section -->
-        <section class="education-section" id="education">
-            <div class="section-header">
-                <h2>03. <span class="gradient-text">Education Background</span></h2>
-                <div class="header-line"></div>
-            </div>
+<footer class="footer">
+    <div class="wrap footer-inner">
+        <p>© <span id="year">2026</span> Yves Alain Iragena · Washington, D.C.</p>
+        <p><a href="https://github.com/Alan-911/my-portfolio" target="_blank" rel="noopener">Source on GitHub</a></p>
+    </div>
+</footer>
 
-            <div class="education-card glass-panel" style="margin-bottom: 2rem;">
-                <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                <div class="edu-details">
-                    <h3 class="edu-degree">M.S. Data Analytics — Multimodal AI Focus</h3>
-                    <h4 class="edu-university">The Catholic University of America</h4>
-                    <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Washington D.C., USA &nbsp;·&nbsp; GPA: 3.7/4.0 &nbsp;·&nbsp; Research Assistantship</p>
-                </div>
-                <div class="edu-year">2025 – May 2026</div>
-            </div>
-
-            <div class="education-card glass-panel">
-                <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                <div class="edu-details">
-                    <h3 class="edu-degree">B.S. Computer Science — Honors &amp; Distinction</h3>
-                    <h4 class="edu-university">KL University</h4>
-                    <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Vijayawada, India &nbsp;·&nbsp; CGPA: 8.9/10</p>
-                </div>
-                <div class="edu-year">2019 – 2023</div>
-            </div>
-        </section>
-
-        <!-- Certificates Section -->
-        <section class="certificates-section" id="certificates">
-            <div class="section-header">
-                <h2>04. <span class="gradient-text">Certifications</span></h2>
-                <div class="header-line"></div>
-            </div>
-
-            <div class="certificates-grid">
-                <div class="cert-card glass-panel">
-                    <i class="fa-solid fa-award cert-icon"></i>
-                    <h3 class="cert-title">Claude in Amazon Bedrock</h3>
-                    <p class="cert-issuer">AWS / Anthropic</p>
-                </div>
-                <div class="cert-card glass-panel">
-                    <i class="fa-solid fa-award cert-icon"></i>
-                    <h3 class="cert-title">Building with the Claude API</h3>
-                    <p class="cert-issuer">Anthropic</p>
-                </div>
-                <div class="cert-card glass-panel">
-                    <i class="fa-solid fa-award cert-icon"></i>
-                    <h3 class="cert-title">Certified Data Scientist</h3>
-                    <p class="cert-issuer">Professional Certification</p>
-                </div>
-                <div class="cert-card glass-panel">
-                    <i class="fa-solid fa-award cert-icon"></i>
-                    <h3 class="cert-title">Data Analyst Associate</h3>
-                    <p class="cert-issuer">Professional Certification</p>
-                </div>
-                <div class="cert-card glass-panel">
-                    <i class="fa-solid fa-award cert-icon"></i>
-                    <h3 class="cert-title">Data Analysis and Visualization</h3>
-                    <p class="cert-issuer">Professional Certification</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects-section" id="projects">
-            <div class="section-header">
-                <h2>05. <span class="gradient-text">Flagship Architectures</span></h2>
-                <div class="header-line"></div>
-            </div>
-
-            <div class="projects-grid">
-                
-                <!-- Project 1: DPADD-ES (Flagship Research) -->
-                <div class="project-card glass-panel project-card--research">
-                    <div class="project-badge project-badge--research">ICME 2026 · Research Lead</div>
-                    <div class="project-tech-tags">
-                        <span>PyTorch</span>
-                        <span>Wav2Vec2</span>
-                        <span>BiLSTM</span>
-                        <span>Multi-Head Attention</span>
-                        <span>CompSpoofV2</span>
-                    </div>
-                    <h3 class="project-title"><i class="fa-solid fa-wave-square"></i> DPADD-ES — Audio Deepfake Detection</h3>
-                    <div class="project-business-case">
-                        <p><strong>Innovation:</strong> Mask-based architecture enforcing disentangled speech and environment representations via Frobenius orthogonality loss — isolates deepfake artifacts at source.</p>
-                        <p><strong>Result:</strong> <strong>0.8923 macro-F1</strong> on CompSpoofV2 (250K clips, 5 classes) vs 0.63 baseline on unseen generators.</p>
-                        <p class="project-impact"><strong>Status:</strong> Submitted to <strong>ICME 2026 Grand Challenge (ESDD2)</strong>.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Alan-911/Audio-Deepfake-Detection" target="_blank" class="project-link" aria-label="View DPADD-ES GitHub"><i class="fa-brands fa-github"></i> Repository</a>
-                        <a href="https://dpadd-es.vercel.app" target="_blank" class="project-link project-link--live" aria-label="Live Showcase"><i class="fa-solid fa-arrow-up-right-from-square"></i> Showcase</a>
-                    </div>
-                </div>
-
-                <!-- Project 2: JP AutoHub SEO Engine -->
-                <div class="project-card glass-panel project-card--featured">
-                    <div class="project-badge">Live Product</div>
-                    <div class="project-tech-tags">
-                        <span>Python</span>
-                        <span>LangChain</span>
-                        <span>AWS</span>
-                        <span>PostgreSQL</span>
-                        <span>FastAPI</span>
-                    </div>
-                    <h3 class="project-title"><i class="fa-solid fa-car"></i> JP AutoHub — Multi-Agent SEO Engine</h3>
-                    <div class="project-business-case">
-                        <p><strong>Problem:</strong> Zero digital footprint for a traditional salvage business in a highly competitive SEO environment.</p>
-                        <p><strong>Solution:</strong> LangChain multi-agent pipeline automating the full SEO content lifecycle — keyword research, product description generation, metadata optimization, and direct publishing.</p>
-                        <p class="project-impact"><strong>Business Impact:</strong> Transitioned from zero presence to market-dominant SEO platform, reducing manual operational workload by <strong>22%</strong>.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://jpautohub.com" target="_blank" class="project-link project-link--live" aria-label="View JP AutoHub Live Site"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
-                        <a href="https://github.com/Alan-911/JP-autohub-project" target="_blank" class="project-link" aria-label="View JP AutoHub Repository"><i class="fa-brands fa-github"></i> Repository</a>
-                    </div>
-                </div>
-
-                <!-- Project 3: Gmail AI Agent -->
-                <div class="project-card glass-panel">
-                    <div class="project-tech-tags">
-                        <span>Python</span>
-                        <span>Claude Haiku</span>
-                        <span>Anthropic SDK</span>
-                        <span>Gmail API</span>
-                        <span>FastAPI</span>
-                    </div>
-                    <h3 class="project-title"><i class="fa-brands fa-google"></i> Gmail AI Semantic Autopilot</h3>
-                    <div class="project-business-case">
-                        <p><strong>Problem:</strong> Keyword-based filters cannot understand intent — cold outreach and urgent client messages look identical to rule engines.</p>
-                        <p><strong>Solution:</strong> Polling daemon using Claude Haiku via the Anthropic SDK to classify emails into 7 intent categories. Auto-archives cold outreach and newsletters, never deletes.</p>
-                        <p class="project-impact"><strong>Impact:</strong> 98%+ accuracy · 1,400+ emails processed · ~10 hrs/week saved · &lt;$0.01/day API cost.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Alan-911/gmail-ai-agent" target="_blank" class="project-link" aria-label="View Gmail AI Agent"><i class="fa-brands fa-github"></i> Repository</a>
-                        <a href="https://gmail-ai-agent-five.vercel.app" target="_blank" class="project-link project-link--live" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                    </div>
-                </div>
-
-                <!-- Project 4: Real-Time Ops Dashboard -->
-                <div class="project-card glass-panel">
-                    <div class="project-tech-tags">
-                        <span>Next.js 16</span>
-                        <span>TypeScript</span>
-                        <span>Supabase Realtime</span>
-                        <span>Tailwind CSS 4</span>
-                    </div>
-                    <h3 class="project-title"><i class="fa-solid fa-gauge-high"></i> Real-Time Ops Dashboard</h3>
-                    <div class="project-business-case">
-                        <p><strong>Problem:</strong> Multi-agent task systems need live visibility — polling loops introduce lag and stale state.</p>
-                        <p><strong>Solution:</strong> Live task board on Supabase <code>postgres_changes</code> WebSocket subscriptions. DB writes appear on screen in under 50ms. Optimistic UI updates with automatic rollback on write failure.</p>
-                        <p class="project-impact"><strong>Stack:</strong> Next.js 16 · React 19 · TypeScript 5 · Supabase Realtime · Tailwind CSS 4</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Alan-911/real-time-dashboard" target="_blank" class="project-link" aria-label="View Real-Time Dashboard"><i class="fa-brands fa-github"></i> Repository</a>
-                        <a href="https://real-time-dashboard-blush.vercel.app" target="_blank" class="project-link project-link--live" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                    </div>
-                </div>
-
-                <!-- Project 5: Notebook RAG Agent -->
-                <div class="project-card glass-panel">
-                    <div class="project-tech-tags">
-                        <span>TypeScript</span>
-                        <span>MCP Server</span>
-                        <span>Node.js</span>
-                    </div>
-                    <h3 class="project-title"><i class="fa-solid fa-book-journal-whills"></i> Notebook RAG Agent — Knowledge Sync</h3>
-                    <div class="project-business-case">
-                        <p><strong>Problem:</strong> Curated intelligence in NotebookLM is siloed from powerful local tool-calling AI environments.</p>
-                        <p><strong>Solution:</strong> TypeScript-based MCP bridge enabling hybrid-RAG conversational analysis over curated research troves.</p>
-                        <p class="project-impact"><strong>Impact:</strong> Dramatically reduced hallucinations by enforcing strict context boundaries on injected notebook data.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Alan-911/notebook-rag-agent" target="_blank" class="project-link" aria-label="View Notebook RAG Agent"><i class="fa-brands fa-github"></i> Repository</a>
-                    </div>
-                </div>
-
-                <!-- Project 6: AuraCommerce -->
-                <div class="project-card glass-panel project-card--featured">
-                    <div class="project-badge">Live System</div>
-                    <div class="project-tech-tags">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>OpenAI GPT-4o-mini</span>
-                        <span>SQLite</span>
-                        <span>Plotly.js</span>
-                        <span>Prometheus</span>
-                    </div>
-                    <h3 class="project-title"><i class="fa-solid fa-chart-line"></i> AuraCommerce — Agentic BI Dashboard</h3>
-                    <div class="project-business-case">
-                        <p><strong>Problem:</strong> E-commerce operators need real-time KPI visibility with anomaly detection — without going down if the LLM API is unavailable.</p>
-                        <p><strong>Solution:</strong> 3-agent pipeline (Analyst → Sentinel → Reporter) with dual-mode Sentinel: GPT-4o-mini reasoning when API key is present, deterministic rule-based fallback otherwise. 6 live Plotly.js charts + PDF report export.</p>
-                        <p class="project-impact"><strong>Impact:</strong> Zero-downtime anomaly detection · PDF export on demand · Prometheus metrics scraping.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Alan-911/enterprise-agent-framework" target="_blank" class="project-link" aria-label="View AuraCommerce GitHub"><i class="fa-brands fa-github"></i> Repository</a>
-                        <a href="https://enterprise-agent-framework.vercel.app" target="_blank" class="project-link project-link--live" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                    </div>
-                </div>
-
-                <!-- Project 7: Classical Lane Detection -->
-                <div class="project-card glass-panel">
-                    <div class="project-tech-tags">
-                        <span>Computer Vision</span>
-                        <span>Python</span>
-                    </div>
-                    <h3 class="project-title"><i class="fa-solid fa-road"></i> Classical Lane Detection</h3>
-                    <div class="project-business-case">
-                        <p><strong>Problem:</strong> Need for high-performance, low-compute lane tracking for embedded automotive hardware.</p>
-                        <p><strong>Solution:</strong> Computer vision pipeline using optimized edge detection and Hough transforms tuned for TU Simple datasets.</p>
-                        <p class="project-impact"><strong>Impact:</strong> Achieved steady **>95%** lane line interception accuracy under varied testing conditions.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Alan-911/lane-detection" target="_blank" class="project-link" aria-label="View Lane Detection Source"><i class="fa-brands fa-github"></i> Repository</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Recommendations Section -->
-        <section class="recommendations-section" id="recommendations">
-            <div class="section-header">
-                <h2>06. <span class="gradient-text">Recommendations</span></h2>
-                <div class="header-line"></div>
-            </div>
-
-            <div class="recommendations-grid">
-
-                <!-- Rec 1: Jonas Sibomana -->
-                <div class="rec-card glass-panel">
-                    <div class="rec-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <p class="rec-body">
-                        "Yves Alain didn't just build a website for JP AutoHub; they engineered a <strong>growth engine</strong>. By architecting an 'AI-First' SEO strategy and deploying autonomous agents to handle site optimization, they moved our digital presence from a standard catalog to a <strong>market-dominant platform</strong>. Their 'Agentic' approach to automation saved us countless manual hours and created a seamless, high-conversion experience for our customers. They are a visionary developer who understands the business impact of AI."
-                    </p>
-                    <div class="rec-meta">
-                        <div class="rec-avatar-placeholder rec-avatar-placeholder--industry"><i class="fa-solid fa-briefcase"></i></div>
-                        <div class="rec-info">
-                            <span class="rec-name">Jonas Sibomana</span>
-                            <span class="rec-title">Founder &amp; CEO</span>
-                            <span class="rec-affiliation">JP AutoHub</span>
-                            <div class="rec-links">
-                                <a href="https://jpautohub.com" target="_blank" class="rec-link" aria-label="JP AutoHub Website"><i class="fa-solid fa-globe"></i> jpautohub.com</a>
-                                <a href="mailto:sibomanajonas@gmail.com" class="rec-link" aria-label="Email Jonas"><i class="fa-solid fa-envelope"></i> sibomanajonas@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rec-tag rec-tag--industry">Industry · JP AutoHub</div>
-                </div>
-
-                <!-- Rec 2: Dr. Hanseok Ko -->
-                <div class="rec-card glass-panel">
-                    <div class="rec-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <p class="rec-body">
-                        "As the Director of the MAIL Lab, I have supervised Yves Alain's work in advanced signal processing and AI. Yves Alain has shown exceptional technical maturity in developing DPADD-ES, a mask-based architecture for audio deepfake detection. This research achieves a <strong>0.8923 macro-F1</strong> on CompSpoofV2 and has been submitted to the <strong>ICME 2026 Grand Challenge (ESDD2)</strong>. Their ability to bridge complex mathematical modeling with real-world security applications marks them as a top-tier AI researcher."
-                    </p>
-                    <div class="rec-meta">
-                        <div class="rec-avatar-placeholder"><i class="fa-solid fa-user-graduate"></i></div>
-                        <div class="rec-info">
-                            <span class="rec-name">Dr. Hanseok Ko</span>
-                            <span class="rec-title">Professor, Newton-Bennett Endowed Chair &amp; Director, MAIL Lab</span>
-                            <span class="rec-affiliation">The Catholic University of America</span>
-                            <div class="rec-links">
-                                <a href="mailto:koha@cua.edu" class="rec-link" aria-label="Email Dr. Ko"><i class="fa-solid fa-envelope"></i> koha@cua.edu</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rec-tag rec-tag--academic">Academic · MAIL Lab</div>
-                </div>
-
-                <!-- Rec 3: Assoumpta — Health Target -->
-                <div class="rec-card glass-panel">
-                    <div class="rec-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <p class="rec-body">
-                        "Yves Alain was instrumental in streamlining the data and sales operations for our pharmaceutical supply chain. At Health Target Complex, they demonstrated a keen ability to manage complex data across our wholesale and import divisions. Their technical approach to monitoring inventory and sales targets <strong>significantly improved our reporting accuracy and operational efficiency</strong>. Yves Alain is a disciplined professional who can bridge the gap between technical data analysis and the fast-paced requirements of a pharmaceutical conglomerate."
-                    </p>
-                    <div class="rec-meta">
-                        <div class="rec-avatar-placeholder rec-avatar-placeholder--ops"><i class="fa-solid fa-pills"></i></div>
-                        <div class="rec-info">
-                            <span class="rec-name">Assoumpta</span>
-                            <span class="rec-title">Sales Manager</span>
-                            <span class="rec-affiliation">Health Target Parapharmacy Limited · Kigali, Rwanda</span>
-                            <div class="rec-links">
-                                <a href="mailto:healthtarget18@gmail.com" class="rec-link" aria-label="Email Health Target"><i class="fa-solid fa-envelope"></i> healthtarget18@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rec-tag rec-tag--ops">Operations · Health Target Complex</div>
-                </div>
-
-                <!-- Rec 4: Dr. Minhee Jun -->
-                <div class="rec-card glass-panel">
-                    <div class="rec-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <p class="rec-body">
-                        "Yves Alain's contributions to our multimodal AI research at the MAIL Lab have been exemplary. In our collaborative projects on agentic systems, Yves Alain demonstrated an impressive command of deep learning architectures and the applied discipline required to push research benchmarks. Their ability to rapidly prototype, iterate, and rigorously evaluate models — particularly in the context of audio signal integrity — speaks to a researcher who is ready for the challenges of frontier AI work."
-                    </p>
-                    <div class="rec-meta">
-                        <div class="rec-avatar-placeholder"><i class="fa-solid fa-user-graduate"></i></div>
-                        <div class="rec-info">
-                            <span class="rec-name">Dr. Minhee Jun</span>
-                            <span class="rec-title">Research Scientist, MAIL Lab</span>
-                            <span class="rec-affiliation">The Catholic University of America</span>
-                        </div>
-                    </div>
-                    <div class="rec-tag rec-tag--academic">Academic · MAIL Lab</div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>&copy; <span id="year"></span> Yves Alain Iragena. Built with <i class="fa-regular fa-heart"></i> and AI.</p>
-    </footer>
-
-    <!-- Native Performance Implementation -->
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
