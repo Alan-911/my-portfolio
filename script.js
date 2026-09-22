@@ -77,7 +77,30 @@
         });
 
         if (location.hash) {
-            try { revealWithin(document.querySelector(location.hash)); } catch (e) {}
+            try {
+                var landing = document.querySelector(location.hash);
+                revealWithin(landing);
+
+                /* Browsers sometimes resolve a #hash before webfonts and images
+                   have settled the layout, and land short of the target — or
+                   never move at all. Re-aim, but only while the page is still
+                   at the very top: if the browser got it right, or the visitor
+                   has started scrolling, scrollY is already past 4 and we leave
+                   them alone rather than yanking the page around. */
+                if (landing) {
+                    var reaim = function () {
+                        if (window.scrollY > 4) return;
+                        landing.scrollIntoView({ behavior: 'auto', block: 'start' });
+                    };
+
+                    reaim();
+                    setTimeout(reaim, 160);
+
+                    /* 'load' may already have fired by the time we get here. */
+                    if (document.readyState === 'complete') setTimeout(reaim, 450);
+                    else window.addEventListener('load', function () { setTimeout(reaim, 120); });
+                }
+            } catch (e) {}
         }
 
         /* ---------- navigation ---------- */
