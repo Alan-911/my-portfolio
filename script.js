@@ -59,10 +59,13 @@
                 else observer.observe(el);
             });
 
-            /* Failsafe: whatever happens, nothing stays hidden. */
-            window.addEventListener('load', function () {
-                setTimeout(showAll, 2500);
-            });
+            /* Failsafe: whatever happens, nothing stays hidden.
+               Must not hang off 'load' alone — if the document is already
+               complete when this runs (cached assets, bfcache, a late
+               script), that listener would never fire and the failsafe
+               would silently never arm. */
+            if (document.readyState === 'complete') setTimeout(showAll, 2500);
+            else window.addEventListener('load', function () { setTimeout(showAll, 2500); });
         }
 
         /* Reveal a target's contents the instant it is jumped to. */
